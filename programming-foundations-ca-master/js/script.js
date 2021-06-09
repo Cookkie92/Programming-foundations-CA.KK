@@ -53,6 +53,24 @@ var games = [
 	},
 ];
 
+for(var i = 0; i < games.length; i++){
+    if(games[i].rating <3.5){
+        console.log(games[i].title)
+        console.log(games[i].rating)
+    }
+}
+
+document.getElementById("games").value = title + rating;
+
+console.log()
+
+
+
+
+
+
+
+
 
 
 
