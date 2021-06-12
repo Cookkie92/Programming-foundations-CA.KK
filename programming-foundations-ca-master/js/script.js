@@ -60,9 +60,9 @@ for(var i = 0; i < games.length; i++){
     }
 }
 
-document.getElementById("games").value = title + rating;
+//document.getElementById("games").value = title + rating;
 
-console.log()
+//console.log()
 
 
 
