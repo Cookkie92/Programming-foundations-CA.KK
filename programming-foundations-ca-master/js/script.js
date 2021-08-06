@@ -7,10 +7,10 @@
 var outOfStock = true;
 
 if(outOfStock === true){
-    //console.log("Out of stock");
+    console.log("Out of stock");
 }
 else{
-    //console.log("In stock");
+    console.log("In stock");
 }
 
 
@@ -19,7 +19,7 @@ else{
 
 for (var i = 15; i <=25; i++){
     if(i === 17 || i === 20 ){ 
-        //console.log(i);   
+        console.log(i);   
     }
 }
 
@@ -29,6 +29,8 @@ for (var i = 15; i <=25; i++){
 
 
 //Question 3
+
+
 
 var games = [
 	{
@@ -52,17 +54,43 @@ var games = [
 		rating: 2.9,
 	},
 ];
+console.log(games);
 
+// selecting class of the UL
+var gamesContainer = document.querySelector(".games");
+
+
+//making the loop
 for(var i = 0; i < games.length; i++){
-    if(games[i].rating <3.5){
-        console.log(games[i].title)
-        console.log(games[i].rating)
+	//creating variable for array with loop
+	var item = games[i];
+	// creating if statement that pulls out games that are below 3.5 and also excluding games with null as value
+    if(games[i].rating <3.5 && games[i].rating !==null){
+        console.log(games[i].title,":",games[i].rating)
+		//creating li items inside ul and adding game title and game rating of the games pulled from loop
+		gamesContainer.innerHTML = gamesContainer.innerHTML + "<li>" + item.title + ":" + item.rating + "</li>";
+		
     }
+	
 }
+//failed codes
 
-//document.getElementById("games").value = title + rating;
 
-//console.log()
+
+//var filtered = games.filter(function (el){
+	//return el != null;
+//});
+
+
+//function removeNull(games){
+	//return games.filter(x => x !== null);
+//}
+//removeNull(games);
+
+
+//var gamesContainer = document.querySelector("#game");
+//gamesContainer.innerhtml = games;
+//console.log("gamesContainer", gamesContainer.innerHTML);
 
 
 
