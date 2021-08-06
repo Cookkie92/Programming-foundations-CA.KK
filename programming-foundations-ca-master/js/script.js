@@ -96,16 +96,28 @@ for(var i = 0; i < games.length; i++){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Question 4
+//declaring the argument, (checkType)
+
+function whatIDontLike (checkType){
+	if(typeof checkType === "string"){
+	console.log("i dont like"+ " " + checkType);
+}
+	else{
+	console.log("Please send in a string")
+}
+
+}
+whatIDontLike("ferret");
+
+
+
+
+
+//failed codes
+//if(horses === String){
+//	console.log( "I dont like" + horses)
+//}
+//else {
+//	console.log("Please send in a string")
+//}
