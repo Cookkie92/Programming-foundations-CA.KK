@@ -121,3 +121,18 @@ whatIDontLike("ferret");
 //else {
 //	console.log("Please send in a string")
 //}
+
+
+
+
+
+
+//Question 5
+
+
+function convertNum (oneArgue, twoArgue ){
+	var bothArgue = oneArgue + twoArgue;
+	if(typeof bothArgue === );
+}
+
+convertNum();
