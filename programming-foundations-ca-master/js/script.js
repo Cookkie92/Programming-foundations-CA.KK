@@ -108,7 +108,7 @@ function whatIDontLike (checkType){
 }
 
 }
-whatIDontLike("");
+whatIDontLike("hotdogs");
 
 
 
@@ -129,10 +129,90 @@ whatIDontLike("");
 
 //Question 5
 
+//DRITT OPPGAVA
 
-//function convertNum (oneArgue, twoArgue ){
-//	var bothArgue = oneArgue + twoArgue;
-//	if(typeof bothArgue === );
+//idontknow shiiit
+//function convertNum (oneArgue, twoArgue){
+//	var oneArgue = "67";
+//	var twoArgue = 78;
+	
 //}
 
 //convertNum();
+
+
+
+//failed code
+//var bothNum = oneArgue, twoArgue;
+	//var numberBothNum = number(bothNum);
+
+
+
+
+//Question 6
+
+var updatePage = document.querySelector(".page");
+var updateTitle = document.querySelector("title");
+var bodyChange = document.querySelector("body");
+var headline = document.querySelector("h1");
+var ulStyle = document.querySelector("ul");
+
+function pageUpdate(){
+	updateTitle = document.title;
+	document.title = "Updated title"
+	document.body.style.background = "#FFFF00"
+	headline.style.color = "green"
+	headline.style.fontFamily = "impact"
+	headline = document.createElement("a"); // e detta på rett vei? dunno
+//KOSS FAEN LAGE EG LINK INNI H1?????????
+	ulStyle.style.listStyle = "none";
+	ulStyle.style.padding ="0"; //detta e feil!!!!
+}
+
+updatePage.onclick = pageUpdate;
+
+
+
+//Failed code
+//var a = document.createElement('a');
+//	var link = document.createTextNode("this is link");
+//	a.appendChild(link);
+//	a.href ="";
+//	document.h1.appendChild(a);
+
+
+
+
+
+
+//Question 7
+
+var bringPrice = document.querySelector(".price");
+
+var toys = [
+	{
+		name: "Lego",
+		price: 15.6,
+	},
+	{
+		name: "Master of the Universe",
+		price: "28.3",
+	},
+	{
+		name: "Barbie",
+		price: null,
+	},
+	{
+		name: "Mr Potato Head",
+		price: 89.99,
+	},
+];
+console.log(toys)
+for(var i = 0; i < toys.length; i++);
+//console.log(toys[i].price);
+
+//function addTotal(){
+
+//}
+
+//bringPrice.onclick = //function navn
