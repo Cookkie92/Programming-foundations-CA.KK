@@ -108,7 +108,7 @@ function whatIDontLike (checkType){
 }
 
 }
-whatIDontLike("ferret");
+whatIDontLike("");
 
 
 
@@ -130,9 +130,9 @@ whatIDontLike("ferret");
 //Question 5
 
 
-function convertNum (oneArgue, twoArgue ){
-	var bothArgue = oneArgue + twoArgue;
-	if(typeof bothArgue === );
-}
+//function convertNum (oneArgue, twoArgue ){
+//	var bothArgue = oneArgue + twoArgue;
+//	if(typeof bothArgue === );
+//}
 
-convertNum();
+//convertNum();
