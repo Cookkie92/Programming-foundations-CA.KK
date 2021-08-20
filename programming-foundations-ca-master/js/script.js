@@ -129,16 +129,41 @@ whatIDontLike("hotdogs");
 
 //Question 5
 
+
+
+
+function convertNum (oneArgue, twoArgue){
+
+	oneArgue = Number(oneArgue);
+	twoArgue = Number(twoArgue);
+
+    if(isNaN(oneArgue) || isNaN(twoArgue)){
+        return document.getElementById("subtraction").innerHTML = "Invalid argument(s)";
+    }
+
+    return document.getElementById("subtraction").innerHTML = oneArgue - twoArgue;
+	 
+}
+
+convertNum("8", "4");
+
+
+
 //DRITT OPPGAVA
 
 //idontknow shiiit
 //function convertNum (oneArgue, twoArgue){
-//	var oneArgue = "67";
-//	var twoArgue = 78;
+//	var convertNu = Number(oneArgue, twoArgue);
+//	if(typeof oneArgue || typeof twoArgue === number){
+//		console.log(twoArgue - oneArgue);
+//	}
+//		else{
+//		console.log("invalid argument(s)");
+//	}
 	
 //}
 
-//convertNum();
+
 
 
 
@@ -159,15 +184,18 @@ var ulStyle = document.querySelector("ul");
 
 function pageUpdate(){
 	updateTitle = document.title;
-	document.title = "Updated title"
-	document.body.style.background = "#FFFF00"
-	headline.style.color = "green"
-	headline.style.fontFamily = "impact"
-	headline = document.createElement("a"); // e detta på rett vei? dunno
-//KOSS FAEN LAGE EG LINK INNI H1?????????
+	document.title = "Updated title";
+	document.body.style.background = "#FFFF00";
+	headline.style.color = "green";
+	headline.style.fontFamily = "impact";
+	headline.innerHTML = "<a href=\"#\">" + headline.innerHTML + "</a>";
 	ulStyle.style.listStyle = "none";
-	ulStyle.style.padding ="0"; //detta e feil!!!!
+	ulStyle.style.padding ="0";
 }
+
+console.log(headline)
+
+
 
 updatePage.onclick = pageUpdate;
 
@@ -207,12 +235,16 @@ var toys = [
 		price: 89.99,
 	},
 ];
-console.log(toys)
-for(var i = 0; i < toys.length; i++);
-//console.log(toys[i].price);
+function addTotal() {
+	var sum = 0;
+	for(var i = 0; i < toys.length; i++){
+	sum += Number (toys[i].price);
+}
+document.getElementById("total").innerHTML = sum;
+return sum;
+}
 
-//function addTotal(){
 
-//}
 
-//bringPrice.onclick = //function navn
+bringPrice.onclick = addTotal;
+
