@@ -6,21 +6,21 @@
 
 var outOfStock = true;
 
-if(outOfStock === true){
-    console.log("Out of stock");
+if (outOfStock === true) {
+	console.log("Out of stock");
 }
-else{
-    console.log("In stock");
+else {
+	console.log("In stock");
 }
 
 
 //Question 2
 
 
-for (var i = 15; i <=25; i++){
-    if(i === 17 || i === 20 ){ 
-        console.log(i);   
-    }
+for (var i = 15; i <= 25; i++) {
+	if (i === 17 || i === 20) {
+		console.log(i);
+	}
 }
 
 
@@ -61,49 +61,49 @@ var gamesContainer = document.querySelector(".games");
 
 
 //making the loop
-for(var i = 0; i < games.length; i++){
+for (var i = 0; i < games.length; i++) {
 	//creating variable for array with loop
 	var item = games[i];
 	// creating if statement that pulls out games that are below 3.5 and also excluding games with null as value
-    if(games[i].rating <3.5 && games[i].rating !==null){
-        console.log(games[i].title,":",games[i].rating)
+	if (games[i].rating < 3.5 && games[i].rating !== null) {
+		console.log(games[i].title, ":", games[i].rating)
 		//creating li items inside ul and adding game title and game rating of the games pulled from loop
 		gamesContainer.innerHTML = gamesContainer.innerHTML + "<li>" + item.title + ":" + item.rating + "</li>";
-		
-    }
-	
+
+	}
+
 }
 
 //Question 4
 //declaring the argument, (checkType)
 
-function whatIDontLike (checkType){
-	if(typeof checkType === "string"){
-	console.log("i dont like"+ " " + checkType);
-}
-	else{
-	console.log("Please send in a string")
-}
+function whatIDontLike(checkType) {
+	if (typeof checkType === "string") {
+		console.log("i dont like" + " " + checkType);
+	}
+	else {
+		console.log("Please send in a string")
+	}
 
 }
-whatIDontLike("hotdogs");
+whatIDontLike(2);
 
 //Question 5
 
-function convertNum (oneArgue, twoArgue){
+function convertNum(oneArgue, twoArgue) {
 	//makes stringnums to numbers
 	oneArgue = Number(oneArgue);
 	twoArgue = Number(twoArgue);
 	//isNaN = is not number
-    if(isNaN(oneArgue) || isNaN(twoArgue)){
-        return document.getElementById("subtraction").innerHTML = "Invalid argument(s)";
-    }
+	if (isNaN(oneArgue) || isNaN(twoArgue)) {
+		return document.getElementById("subtraction").innerHTML = "Invalid argument(s)";
+	}
 
-    return document.getElementById("subtraction").innerHTML = oneArgue - twoArgue;
-	 
+	return document.getElementById("subtraction").innerHTML = oneArgue - twoArgue;
+
 }
 // argument 1, 2
-convertNum("8", "4");
+convertNum("2", "8");
 
 
 //Question 6
@@ -114,7 +114,7 @@ var bodyChange = document.querySelector("body");
 var headline = document.querySelector("h1");
 var ulStyle = document.querySelector("ul");
 
-function pageUpdate(){
+function pageUpdate() {
 	updateTitle = document.title;
 	document.title = "Updated title";
 	document.body.style.background = "#FFFF00";
@@ -122,7 +122,7 @@ function pageUpdate(){
 	headline.style.fontFamily = "impact";
 	headline.innerHTML = "<a href=\"#\">" + headline.innerHTML + "</a>";
 	ulStyle.style.listStyle = "none";
-	ulStyle.style.padding ="0px";
+	ulStyle.style.padding = "0px";
 }
 
 console.log(headline)
@@ -156,11 +156,11 @@ var toys = [
 ];
 function addTotal() {
 	var sum = 0;
-	for(var i = 0; i < toys.length; i++){
-	sum += Number (toys[i].price);
-}
-document.getElementById("total").innerHTML = sum;
-return sum;
+	for (var i = 0; i < toys.length; i++) {
+		sum += Number(toys[i].price);
+	}
+	document.getElementById("total").innerHTML = sum;
+	return sum;
 }
 
 
