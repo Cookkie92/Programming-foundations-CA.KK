@@ -73,28 +73,6 @@ for(var i = 0; i < games.length; i++){
     }
 	
 }
-//failed codes
-
-
-
-//var filtered = games.filter(function (el){
-	//return el != null;
-//});
-
-
-//function removeNull(games){
-	//return games.filter(x => x !== null);
-//}
-//removeNull(games);
-
-
-//var gamesContainer = document.querySelector("#game");
-//gamesContainer.innerhtml = games;
-//console.log("gamesContainer", gamesContainer.innerHTML);
-
-
-
-
 
 //Question 4
 //declaring the argument, (checkType)
@@ -110,27 +88,7 @@ function whatIDontLike (checkType){
 }
 whatIDontLike("hotdogs");
 
-
-
-
-
-//failed codes
-//if(horses === String){
-//	console.log( "I dont like" + horses)
-//}
-//else {
-//	console.log("Please send in a string")
-//}
-
-
-
-
-
-
 //Question 5
-
-
-
 
 function convertNum (oneArgue, twoArgue){
 
@@ -146,32 +104,6 @@ function convertNum (oneArgue, twoArgue){
 }
 
 convertNum("8", "4");
-
-
-
-//DRITT OPPGAVA
-
-//idontknow shiiit
-//function convertNum (oneArgue, twoArgue){
-//	var convertNu = Number(oneArgue, twoArgue);
-//	if(typeof oneArgue || typeof twoArgue === number){
-//		console.log(twoArgue - oneArgue);
-//	}
-//		else{
-//		console.log("invalid argument(s)");
-//	}
-	
-//}
-
-
-
-
-
-//failed code
-//var bothNum = oneArgue, twoArgue;
-	//var numberBothNum = number(bothNum);
-
-
 
 
 //Question 6
@@ -190,7 +122,7 @@ function pageUpdate(){
 	headline.style.fontFamily = "impact";
 	headline.innerHTML = "<a href=\"#\">" + headline.innerHTML + "</a>";
 	ulStyle.style.listStyle = "none";
-	ulStyle.style.padding ="0";
+	ulStyle.style.padding ="0px";
 }
 
 console.log(headline)
@@ -198,19 +130,6 @@ console.log(headline)
 
 
 updatePage.onclick = pageUpdate;
-
-
-
-//Failed code
-//var a = document.createElement('a');
-//	var link = document.createTextNode("this is link");
-//	a.appendChild(link);
-//	a.href ="";
-//	document.h1.appendChild(a);
-
-
-
-
 
 
 //Question 7
