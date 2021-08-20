@@ -91,10 +91,10 @@ whatIDontLike("hotdogs");
 //Question 5
 
 function convertNum (oneArgue, twoArgue){
-
+	//makes stringnums to numbers
 	oneArgue = Number(oneArgue);
 	twoArgue = Number(twoArgue);
-
+	//isNaN = is not number
     if(isNaN(oneArgue) || isNaN(twoArgue)){
         return document.getElementById("subtraction").innerHTML = "Invalid argument(s)";
     }
@@ -102,7 +102,7 @@ function convertNum (oneArgue, twoArgue){
     return document.getElementById("subtraction").innerHTML = oneArgue - twoArgue;
 	 
 }
-
+// argument 1, 2
 convertNum("8", "4");
 
 
@@ -167,3 +167,6 @@ return sum;
 
 bringPrice.onclick = addTotal;
 
+
+
+//Kristian Koløy 
